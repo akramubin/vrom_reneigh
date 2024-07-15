@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\BrandController as AdminBrandController;
+<<<<<<< HEAD
 use App\Http\Controllers\Admin\DashboardController  as AdminDashboardController;
 use App\Http\Controllers\Admin\typeController as AdmintypeController;
 use App\Http\Controllers\Admin\BookingController as AdminBookingController;
@@ -10,6 +11,10 @@ use App\Http\Controllers\Front\LandingController;
 use App\Http\Controllers\Front\DetailController;
 use App\Http\Controllers\Front\CheckoutController;
 use App\Http\Controllers\Front\PaymentController;
+=======
+use App\Http\Controllers\Admin\TypeController as AdminTypeController;
+use App\Http\Controllers\Admin\DashboardController  as AdminDashboardController;
+>>>>>>> 21d66d715cff087f0b6e76a6e29606207e68da90
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +25,7 @@ use App\Http\Controllers\Front\PaymentController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+<<<<<<< HEAD
 Route::name('front.')->group(function () {
     Route::get('/', [LandingController::class, 'index'])->name('index');
     Route::get('/detail/{slug}', [DetailController::class, 'index'])->name('detail');
@@ -38,6 +44,11 @@ Route::name('front.')->group(function () {
 
 Route::name('front.')->group(function () {
     Route::get('/', [LandingController::class, 'index'])->name('index');
+=======
+
+Route::get('/', function () {
+    return view('welcome');
+>>>>>>> 21d66d715cff087f0b6e76a6e29606207e68da90
 });
 
 //...
@@ -47,6 +58,7 @@ Route::prefix('admin')->name('admin.')->middleware([
     'verified',
     'admin'
 ])->group(function () {
+<<<<<<< HEAD
     Route::resource('brands', AdminBrandController::class);
     Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
     Route::resource('types', AdmintypeController::class);
@@ -57,3 +69,10 @@ Route::prefix('admin')->name('admin.')->middleware([
 Route::get('/admin', function () {
     //
 })->middleware('admin'); 
+=======
+
+    Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
+    Route::resource('brands', AdminBrandController::class);
+    Route::resource('types', AdminTypeController::class);
+});
+>>>>>>> 21d66d715cff087f0b6e76a6e29606207e68da90

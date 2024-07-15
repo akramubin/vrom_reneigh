@@ -6,7 +6,10 @@ use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
 {
+<<<<<<< HEAD
     
+=======
+>>>>>>> 21d66d715cff087f0b6e76a6e29606207e68da90
     /**
      * The application's global HTTP middleware stack.
      *
@@ -66,5 +69,8 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'admin' => \App\Http\Middleware\IsAdmin::class,
     ];
+<<<<<<< HEAD
 
+=======
+>>>>>>> 21d66d715cff087f0b6e76a6e29606207e68da90
 }

@@ -2,8 +2,11 @@
 
 return [
 
+<<<<<<< HEAD
     
 
+=======
+>>>>>>> 21d66d715cff087f0b6e76a6e29606207e68da90
     /*
     |--------------------------------------------------------------------------
     | Third Party Services
@@ -33,6 +36,7 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+<<<<<<< HEAD
 
     'midtrans' =>  [
         'clientkey' => env('MIDTRANS_CLIENT_KEY'),
@@ -41,4 +45,6 @@ return [
         'isSanitized' => env('MIDTRANS_IS_SANITIZED', true),
         'is3ds' => env('MIDTRANS_IS_3DS', true)
     ]
+=======
+>>>>>>> 21d66d715cff087f0b6e76a6e29606207e68da90
 ];

@@ -181,6 +181,10 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+<<<<<<< HEAD
+=======
+        Yajra\DataTables\DataTablesServiceProvider::class,
+>>>>>>> 21d66d715cff087f0b6e76a6e29606207e68da90
 
         /*
          * Package Service Providers...

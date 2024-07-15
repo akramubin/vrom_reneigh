@@ -21,7 +21,11 @@ class User extends Authenticatable
     /**
      * The attributes that are mass assignable.
      *
+<<<<<<< HEAD
      * @var array<int, string>
+=======
+     * @var string[]
+>>>>>>> 21d66d715cff087f0b6e76a6e29606207e68da90
      */
     protected $fillable = [
         'name',
@@ -32,7 +36,11 @@ class User extends Authenticatable
     /**
      * The attributes that should be hidden for serialization.
      *
+<<<<<<< HEAD
      * @var array<int, string>
+=======
+     * @var array
+>>>>>>> 21d66d715cff087f0b6e76a6e29606207e68da90
      */
     protected $hidden = [
         'password',
@@ -44,7 +52,11 @@ class User extends Authenticatable
     /**
      * The attributes that should be cast.
      *
+<<<<<<< HEAD
      * @var array<string, string>
+=======
+     * @var array
+>>>>>>> 21d66d715cff087f0b6e76a6e29606207e68da90
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
@@ -53,7 +65,11 @@ class User extends Authenticatable
     /**
      * The accessors to append to the model's array form.
      *
+<<<<<<< HEAD
      * @var array<int, string>
+=======
+     * @var array
+>>>>>>> 21d66d715cff087f0b6e76a6e29606207e68da90
      */
     protected $appends = [
         'profile_photo_url',
