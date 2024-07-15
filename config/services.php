@@ -2,6 +2,8 @@
 
 return [
 
+    
+
     /*
     |--------------------------------------------------------------------------
     | Third Party Services
@@ -31,4 +33,12 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+
+    'midtrans' =>  [
+        'clientkey' => env('MIDTRANS_CLIENT_KEY'),
+        'serverKey' => env('MIDTRANS_SERVER_KEY'),
+        'isProduction' => env('MIDTRANS_IS_PRODUCTION', false),
+        'isSanitized' => env('MIDTRANS_IS_SANITIZED', true),
+        'is3ds' => env('MIDTRANS_IS_3DS', true)
+    ]
 ];
